@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify user login</name>
+   <name>Verify screen login</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>021d0c23-10af-455a-b72a-ea292bf3eba7</testCaseGuid>

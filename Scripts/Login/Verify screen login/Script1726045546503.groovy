@@ -17,7 +17,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.google.com/')
+WebUI.openBrowser(GlobalVariable.url)
 
-WebUI.navigateToUrl('https://github.com/oesmy/miniproject-web1')
+WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
 
+WebUI.verifyElementPresent(findTestObject('Object Repository/Login Pages/label_img'), 0)
+
+WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_login'), 'Login')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_username'), 'Username')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_password'), 'Password')
