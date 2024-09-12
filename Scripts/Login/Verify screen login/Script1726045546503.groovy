@@ -23,11 +23,14 @@ WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Login Pages/label_img'), 0)
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_login'), 'Login')
+WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_login'), findTestData('Login/data verify login').getValue(
+        'Label', 1))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_username'), 'Username')
+WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_username'), findTestData('Login/data verify login').getValue(
+        'Label', 2))
 
-WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_password'), 'Password')
+WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_password'), findTestData('Login/data verify login').getValue(
+        'Label', 3))
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Login Pages/btn_login'))
 
@@ -40,3 +43,4 @@ WebUI.setText(findTestObject('Object Repository/Login Pages/field_password'), 'p
 WebUI.takeFullPageScreenshot()
 
 WebUI.delay(5)
+
