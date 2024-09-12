@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_login</name>
+   <name>alert_credential</name>
    <tag></tag>
-   <elementGuidId>cb423918-91a2-4ce6-b878-0533a50cf45d</elementGuidId>
+   <elementGuidId>7b7d54af-2d94-4d1e-b6f2-b0ada677a3cc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[@role='alert']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

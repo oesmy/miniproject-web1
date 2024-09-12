@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(GlobalVariable.url)
+WebUI.openBrowser(GlobalVariable.URL)
 
 WebUI.maximizeWindow(FailureHandling.STOP_ON_FAILURE)
 
@@ -28,3 +28,15 @@ WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_logi
 WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_username'), 'Username')
 
 WebUI.verifyElementText(findTestObject('Object Repository/Login Pages/label_password'), 'Password')
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/Login Pages/btn_login'))
+
+WebUI.verifyElementVisible(findTestObject('Object Repository/Login Pages/btn_fgtpassword'))
+
+WebUI.setText(findTestObject('Object Repository/Login Pages/field_username'), 'username')
+
+WebUI.setText(findTestObject('Object Repository/Login Pages/field_password'), 'password')
+
+WebUI.takeFullPageScreenshot()
+
+WebUI.delay(5)

@@ -7,6 +7,6 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'</initValue>
-      <name>url</name>
+      <name>URL</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

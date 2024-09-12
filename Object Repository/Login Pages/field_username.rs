@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_login</name>
+   <name>field_username</name>
    <tag></tag>
-   <elementGuidId>cb423918-91a2-4ce6-b878-0533a50cf45d</elementGuidId>
+   <elementGuidId>d63fc46b-423d-4a61-a9c8-9e9990b31261</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//input[@placeholder='Username']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
