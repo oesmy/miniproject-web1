@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify screen login</name>
+   <name>TC003 - Verify Invalid Login</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>021d0c23-10af-455a-b72a-ea292bf3eba7</testCaseGuid>
+   <testCaseGuid>af01d905-c85f-414d-a5f1-ec87c25aa9b3</testCaseGuid>
 </TestCaseEntity>
