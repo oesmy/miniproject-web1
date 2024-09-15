@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>alert_username</name>
+   <name>label_dashboard</name>
    <tag></tag>
-   <elementGuidId>e04755fd-21b8-4030-9dcd-1a5e6574118d</elementGuidId>
+   <elementGuidId>cf79efa5-9593-4ec7-9007-e86fd6cb9cee</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']</value>
+         <value>(//h6[normalize-space()='Dashboard'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

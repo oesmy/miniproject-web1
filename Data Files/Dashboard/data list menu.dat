@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>data verify login</name>
+   <name>data list menu</name>
    <tag></tag>
    <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>e581fb71-59ca-45ee-acec-5e139bae715e</dataFileGUID>
-   <dataSourceUrl>Data Test/Login/data_credential.xlsx</dataSourceUrl>
+   <dataFileGUID>39d6920c-fb7c-4a6b-8ed9-4ca2fc5fc53c</dataFileGUID>
+   <dataSourceUrl>C:\Users\ASUS\git\miniproject-web1\Data Test\Dashboard\data_listmenu.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>true</isInternalPath>
+   <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Sheet1</sheetName>

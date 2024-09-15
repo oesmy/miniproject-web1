@@ -17,3 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Login/Verify Screen Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Login Pages/field_username'))
+
+WebUI.setText(findTestObject('Login Pages/field_username'), findTestData('Login/data verify login').getValue('Username', 
+        1))
+
+WebUI.click(findTestObject('Login Pages/field_password'))
+
+WebUI.setText(findTestObject('Login Pages/field_password'), findTestData('Login/data verify login').getValue('Password', 
+        1))
+
+WebUI.click(findTestObject('Login Pages/btn_login'))
+
+WebUI.verifyElementVisible(findTestObject('Dashboard/Label/label_dashboard'))
+
+WebUI.takeFullPageScreenshot()
+
+WebUI.closeBrowser()
+

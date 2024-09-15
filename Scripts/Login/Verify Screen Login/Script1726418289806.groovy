@@ -34,19 +34,7 @@ WebUI.verifyElementVisible(findTestObject('Object Repository/Login Pages/btn_log
 
 WebUI.verifyElementVisible(findTestObject('Object Repository/Login Pages/btn_fgtpassword'))
 
-WebUI.click(findTestObject('Login Pages/field_username'))
-
-WebUI.setText(findTestObject('Object Repository/Login Pages/field_username'), findTestData('Login/data verify login').getValue(
-        'Username', 1))
-
-WebUI.click(findTestObject('Login Pages/field_password'))
-
-WebUI.setText(findTestObject('Object Repository/Login Pages/field_password'), findTestData('Login/data verify login').getValue(
-        'Password', 1))
-
 WebUI.takeFullPageScreenshot()
-
-WebUI.click(findTestObject('Login Pages/btn_login'))
 
 WebUI.delay(5)
 

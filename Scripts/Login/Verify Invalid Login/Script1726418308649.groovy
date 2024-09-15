@@ -17,8 +17,20 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login/TC001 - Verify Screen Login'), [('username') : findTestData('Login/data verify login').getValue(
-            'Username', 1), ('password') : findTestData('Login/data verify login').getValue('Password', 1)], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Login/Verify Screen Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.getUrl()
+WebUI.setText(findTestObject('Login Pages/field_username'), findTestData('Login/data verify login').getValue('Username', 
+        2))
+
+WebUI.setText(findTestObject('Login Pages/field_password'), findTestData('Login/data verify login').getValue('Password', 
+        1))
+
+WebUI.click(findTestObject('Login Pages/btn_login'))
+
+WebUI.verifyElementPresent(findTestObject('Login Pages/alert_credential'), 0)
+
+WebUI.verifyElementText(findTestObject('Login Pages/alert_credential'), findTestData('Login/data verify login').getValue(
+        'AlertError', 1))
+
+WebUI.takeFullPageScreenshot()
 
